@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Client Details Form - BiGo</title>
+  <link rel="stylesheet" href="client.css" />
+</head>
+<body>
+  <div class="form-container">
+    <h2>Client Details Form</h2>
+    <form id="clientForm">
+      
+      <label>Phone Number</label>
+      <input type="tel" name="phone" id="phone" required />
+      <button type="button" id="checkPhone">Check Client</button>
+
+      <label>Store Name</label>
+      <input type="text" name="store" id="store" required />
+
+      <label>Remarks</label>
+      <input type="text" name="remarks" id="remarks" />
+
+      <label>Email Address</label>
+      <input type="email" name="email" required />
+
+      <label>Alternative Phone Number</label>
+      <input type="tel" name="altPhone" />
+
+      <label>Owner Name</label>
+      <input type="text" name="owner" required />
+
+      <label>Type of Industry</label>
+      <input type="text" name="industry" />
+
+      <label>Reporting Location for BiGo</label>
+      <input type="text" name="location" />
+
+      <label>GST Number</label>
+      <input type="text" name="gst" />
+
+      <label>Upload GST Certificate</label>
+      <input type="file" id="gstFile" name="gstFile" accept=".pdf,.jpg,.jpeg,.png" />
+
+      <label>No. of Bikes Required</label>
+      <input type="number" name="bikes" required />
+
+      <label>Choose the Plan</label>
+      <select name="plan" required>
+        <option value="">Select Plan</option>
+        <option value="Daily">Daily</option>
+        <option value="Weekly">Weekly</option>
+        <option value="Monthly">Monthly</option>
+      </select>
+
+      <label>Schedule Test Reporting Date</label>
+      <input type="date" name="date" required />
+
+      <label>How did you come to know about BiGo?</label>
+      <input type="text" name="knowAbout" />
+
+      <label>Has someone approached you?</label>
+      <select name="approached">
+        <option value="No">No</option>
+        <option value="Yes">Yes</option>
+      </select>
+
+      <label>If yes, please state their name</label>
+      <input type="text" name="approachedName" />
+
+      <label>Best feature which convinced you to choose BiGo</label>
+      <textarea name="feature"></textarea>
+
+      <label>Purpose of Rent</label>
+      <input type="text" name="purpose" />
+
+      <label>Where are you going to use this bike?</label>
+      <input type="text" name="usage" />
+
+      <label>Please state your designation</label>
+      <input type="text" name="designation" />
+
+      <button type="submit">Submit</button>
+      <p id="status"></p>
+    </form>
+  </div>
+
+  <script src="client.js"></script>
+</body>
+</html>
